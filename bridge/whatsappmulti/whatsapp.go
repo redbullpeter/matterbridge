@@ -177,6 +177,12 @@ func (b *Bwhatsapp) Disconnect() error {
 // Required implementation of the Bridger interface
 // https://github.com/42wim/matterbridge/blob/2cfd880cdb0df29771bf8f31df8d990ab897889d/bridge/bridge.go#L11-L16
 func (b *Bwhatsapp) JoinChannel(channel config.ChannelInfo) error {
+	// Skip status@broadcast - it's a special WhatsApp broadcast list, not a joinable group
+	if channel.Name == "status@broadcast" {
+		b.Log.Debugf("Skipping status@broadcast channel - not a joinable group")
+		return nil
+	}
+
 	// Check if this is a private chat JID
 	if isPrivateJid(channel.Name) {
 		// For private chats, validate the JID format but don't require group membership

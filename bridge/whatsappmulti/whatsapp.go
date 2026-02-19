@@ -173,7 +173,7 @@ func (b *Bwhatsapp) Disconnect() error {
 }
 
 // JoinChannel Join a WhatsApp group specified in gateway config as
-// channel='number-id@g.us' or channel='Channel name' or channel='number@s.whatsapp.net'
+// channel='number-id@g.us' or channel='Channel name' or channel='number@s.whatsapp.net' or channel='number@lid'
 // Required implementation of the Bridger interface
 // https://github.com/42wim/matterbridge/blob/2cfd880cdb0df29771bf8f31df8d990ab897889d/bridge/bridge.go#L11-L16
 func (b *Bwhatsapp) JoinChannel(channel config.ChannelInfo) error {

@@ -7,7 +7,6 @@ require (
 	github.com/d5/tengo/v2 v2.17.0
 	github.com/davecgh/go-spew v1.1.2-0.20180830191138-d8f796af33cc
 	github.com/fsnotify/fsnotify v1.7.0
-	github.com/gomarkdown/markdown v0.0.0-20240419095408-642f0ee99ae2
 	github.com/google/gops v0.3.27
 	github.com/gorilla/schema v1.4.1
 	github.com/hashicorp/golang-lru v1.0.2
@@ -40,11 +39,12 @@ require (
 	github.com/writeas/go-strip-markdown v2.0.1+incompatible
 	github.com/xmppo/go-xmpp v0.3.2
 	github.com/yaegashi/msgraph.go v0.1.4
+	github.com/yuin/goldmark v1.8.2
 	github.com/zfjagann/golang-ring v0.0.0-20220330170733-19bcea1b6289
-	go.mau.fi/whatsmeow v0.0.0-20260123132415-83db04703aee
+	go.mau.fi/whatsmeow v0.0.0-20260218135554-9cbe80fb25a4
 	golang.org/x/image v0.19.0
 	golang.org/x/oauth2 v0.22.0
-	golang.org/x/text v0.33.0
+	golang.org/x/text v0.34.0
 	gomod.garykim.dev/nc-talk v0.3.0
 	google.golang.org/protobuf v1.36.11
 	layeh.com/gumble v0.0.0-20221205141517-d1df60a3cc14
@@ -89,7 +89,7 @@ require (
 	github.com/mattn/go-colorable v0.1.14 // indirect
 	github.com/mattn/go-isatty v0.0.20 // indirect
 	github.com/mattn/go-runewidth v0.0.15 // indirect
-	github.com/mattn/go-sqlite3 v1.14.33 // indirect
+	github.com/mattn/go-sqlite3 v1.14.34 // indirect
 	github.com/mgutz/ansi v0.0.0-20200706080929-d51e80ef957d // indirect
 	github.com/mitchellh/go-testing-interface v1.14.1 // indirect
 	github.com/monaco-io/request v1.0.5 // indirect
@@ -130,15 +130,14 @@ require (
 	github.com/vmihailenco/tagparser/v2 v2.0.0 // indirect
 	github.com/wiggin77/merror v1.0.5 // indirect
 	github.com/wiggin77/srslog v1.0.1 // indirect
-	github.com/yuin/goldmark v1.8.2 // indirect
 	go.mau.fi/libsignal v0.2.1 // indirect
-	go.mau.fi/util v0.9.5 // indirect
+	go.mau.fi/util v0.9.6 // indirect
 	go.uber.org/multierr v1.11.0 // indirect
-	golang.org/x/crypto v0.47.0 // indirect
-	golang.org/x/exp v0.0.0-20260112195511-716be5621a96 // indirect
-	golang.org/x/net v0.49.0 // indirect
-	golang.org/x/sys v0.40.0 // indirect
-	golang.org/x/term v0.39.0 // indirect
+	golang.org/x/crypto v0.48.0 // indirect
+	golang.org/x/exp v0.0.0-20260212183809-81e46e3db34a // indirect
+	golang.org/x/net v0.50.0 // indirect
+	golang.org/x/sys v0.41.0 // indirect
+	golang.org/x/term v0.40.0 // indirect
 	golang.org/x/time v0.5.0 // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20240722135656-d784300faade // indirect
 	google.golang.org/grpc v1.65.0 // indirect
@@ -157,4 +156,4 @@ require (
 
 //replace github.com/matrix-org/gomatrix => github.com/matterbridge/gomatrix v0.0.0-20220205235239-607eb9ee6419
 
-go 1.24.0
+go 1.25.0
